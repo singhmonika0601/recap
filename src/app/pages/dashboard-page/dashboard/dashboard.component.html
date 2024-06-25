@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="overlay-sty" (click)="overlayClick()"></div>
+    <!-- Navbar -->
+    <app-header></app-header>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar elevation-4">
+        <!-- Brand Logo -->
+        <a [routerLink]="['/']" class="brand-link border-bottom">
+            <img src="assets/theme/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <span class="brand-text font-weight-light text-white">Question Bank</span>
+        </a>
+
+        <!-- Sidebar -->
+        <app-sidebar></app-sidebar>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <app-footer></app-footer>
+</div>

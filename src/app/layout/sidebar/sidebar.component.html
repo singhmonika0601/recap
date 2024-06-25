@@ -1,0 +1,134 @@
+<div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+           with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        Dashboard
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+
+                <ul class="nav nav-treeview">
+                    <li class="nav-item" matTooltip="Fetch Coordinator Details">
+                        <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard-page']"
+                            routerLinkActive="active" class="nav-link" [class]="routerLinkMenu()">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>My panel</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <ul class="nav nav-treeview">
+                    <li class="nav-item" matTooltip="Fetch Coordinator Details"  style="margin-bottom: -10px">
+                      <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard']" routerLinkActive="active"  class="nav-link dynamicNavChange">
+                        <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard/bash']" routerLinkActive="active"  class="nav-link dynamicNavChange"></a>
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Coordinator Details</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" matTooltip="HOG/HOD Panel" style="margin-bottom: -10px">
+                        <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard/request-panel']" routerLinkActive="active dynamicNavChange" class="nav-link">
+                          <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard/request-bash']" routerLinkActive="active dynamicNavChange" class="nav-link"></a>
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Coordinator Request Panel</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" matTooltip="HOG/HOD Panel" style="margin-bottom: -10px">
+                        <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard/hog-panel']" routerLinkActive="active" class="nav-link dynamicNavChange">
+                          <a [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/dashboard/hog-bash']" routerLinkActive="active" class="nav-link dynamicNavChange"></a>
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>HOG/HOD Panel</p>
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+            <li class="nav-header">UTILITIES</li>
+            <li class="nav-item" matTooltip="Add Coordinator">
+                <a [routerLink]="['upload-content']" routerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Upload PDF File
+                    </p>
+                </a>
+            </li>
+            <!-- <li class="nav-item" matTooltip="Add Coordinator">
+                <a [routerLink]="['mcq-question']" routerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        MCQs
+                    </p>
+                </a>
+            </li> -->
+            <li class="nav-item" matTooltip="Add Coordinator">
+                <a [routerLink]="['score-card']" routerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Scored Card
+                    </p>
+                </a>
+            </li>
+            <!-- <li class="nav-item" matTooltip="Manage Department">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fa fa-cubes"></i>
+                    <p>
+                        Manage Department
+                        <i class="fas fa-angle-left right"></i>
+                        <span class="badge badge-info right">2</span>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item" matTooltip="Add Department">
+                        <a [routerLink]="['/coordinator/add-department']" routerLinkActive="active" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Add Department</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" matTooltip="Change Department">
+                        <a [routerLink]="['/coordinator/change-department']" routerLinkActive="active" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Change Department</p>
+                        </a>
+                    </li>
+                </ul>
+            </li> -->
+            <!-- <li class="nav-item" matTooltip="Pending Department">
+                <a [routerLink]="['/coordinator/pending-department']" outerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fa fa-hourglass-end"></i>
+                    <p>
+                        Pending Department
+                    </p>
+                </a>
+            </li> -->
+            <!-- <li class="nav-item" matTooltip="New Registration">
+                <a [routerLink]="['/coordinator/new-registration']" routerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fa fa-user-plus"></i>
+                    <p>
+                        New Registration
+                    </p>
+                </a>
+            </li> -->
+            <!-- <li class="nav-item" matTooltip="Delegate Console">
+                <a [routerLink]="['/coordinator/delegate-console']" routerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fas fa-bezier-curve"></i>
+                    <p>
+                        Delegate Console
+                    </p>
+                </a>
+            </li> -->
+            <!-- <li class="nav-item" matTooltip="Id Lookup">
+                <a [routerLink]="['/coordinator/id-lookup']" routerLinkActive="active" class="nav-link">
+                    <i class="nav-icon fas fa-air-freshener"></i>
+                    <p>
+                        ID Lookup
+                    </p>
+                </a>
+            </li> -->
+        </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+</div>

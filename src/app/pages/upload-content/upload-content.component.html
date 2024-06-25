@@ -1,0 +1,65 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 head-1">Admin Upload Form</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Admin Upload Form</li>
+                </ol>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Info boxes -->
+        <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <div class="col-md-12">
+                <!-- MAP & BOX PANE -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Admin Upload Form</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body form-style">
+                        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                            <div class="col-md-8 text-center">
+                                <div class="vpb_browse_file_box mt-3 text-center" (click)="uploader.click()">
+                                    <i class="fa fa-cloud-upload-alt"></i>
+                                    <p class="text-center" style="font-weight: 600;color: #5578eb;">Click here to select
+                                        File</p>
+                                        <p class="text-center text-danger fileName" style="font-weight: 600;"></p>    
+                                </div>
+                                <input type="file" name="vasplus_multiple_files" (change)="selectFile($event)"
+                                    #uploader accept="application/pdf" multiple="" style="display: none;">
+                            </div>
+                            <div class="col-md-8 text-center form-group mt-5">
+                                <button type="submit" class="btn btn-primary">Upload</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!--/. container-fluid -->
+</section>

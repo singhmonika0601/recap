@@ -1,0 +1,29 @@
+table.downloaded-tbl td {
+    vertical-align: middle;
+}
+.vpb_browse_file_box {
+    padding: 20px 10px;
+    border: 3px dashed #ccc;
+    border-radius: 10px;
+}.vpb_browse_file_box i {
+    font-size: 58px;
+    color: #ddd;
+}
+table#vpb_added_files td {
+    font-size: 12px;
+    padding: 5px;
+}
+table#vpb_added_files th {
+    font-size: 12px;
+    padding: 8px;
+}
+span.btn-remove {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #6610f2;
+    cursor: pointer;
+}
+
+.alert-custom{
+    background-color : rgb(240, 199, 199);
+  }

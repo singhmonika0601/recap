@@ -1,0 +1,22 @@
+.overlay-sty.show-overlay {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: rgb(52 58 64 / 7%);
+    z-index: 1040;
+  }
+  
+  .main-sidebar{
+    /* background: darkcyan; */
+    background: rgb(48, 79, 109);
+    /* background:#07414c; */
+    /* background: #07a7e3; */
+     /* background:  linear-gradient(135deg, #07a7e3 0%, #32dac3 100%); */
+     /* background: steelblue; */
+     /* background: rgb(9, 75, 75);
+      */
+      /* background: #bb3385; */
+  }
+  

@@ -25,9 +25,19 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/theme/plugins/fontawesome-free/css/all.css",
+              "src/assets/theme/plugins/overlayScrollbars/css/OverlayScrollbars.css",
+              "src/assets/theme/dist/css/adminlte.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/theme/plugins/bootstrap/js/bootstrap.bundle.js",
+              "src/assets/theme/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js",
+              "src/assets/theme/dist/js/adminlte.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1cea2836-735a-4b04-a1eb-1ce7ac5ea789"
   }
 }

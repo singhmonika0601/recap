@@ -1,0 +1,34 @@
+li.nav-header {
+    margin-top: 10px;
+    border-top: 1px solid;
+    font-size: 13px !important;
+    font-weight: 700;
+    color: #f8f9fa !important;
+  }
+  .sidebar li.nav-item a {
+    font-size: 14px;
+    color: #ececec;
+  }
+  .sidebar li.nav-item {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .nav.nav-treeview a.nav-link.active {
+    background: #f8f9fa !important;
+    /* color: #f9fafc !important; */
+  
+    color: #1f2d3d !important;
+  }
+  
+  a.nav-link.active {
+    background: #3c8dbc !important;
+    color: #fff !important;
+  }
+  
+  .dynamicNavChange{
+    margin-top: 10px;
+      padding: 0px 18px 15px 18px
+  }
+  
+  
+  

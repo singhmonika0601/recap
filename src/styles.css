@@ -1,1 +1,415 @@
-/* You can add global styles to this file, and also import other style files */
+.dataTables_wrapper {
+    font-size: 13px;
+}
+
+form label {
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+
+h3.card-title {
+    font-weight: 700;
+    margin: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #3498db !important;
+    color: #fff !important;
+    padding: 2px 10px;
+}
+
+.dataTables_length {
+    float: left !important;
+    margin: 0 !important;
+}
+
+.dataTables_filter {
+    float: right !important;
+    margin: 0 !important;
+}
+
+span.reg-mini {
+    background: #eee;
+    padding: 5px 15px 6px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    border: 2px solid #20c997;
+}
+
+.heading-h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.card-body.activity.scroll .progress-bar {
+    cursor: pointer;
+}
+
+span.app_id {
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #3498db;
+}
+
+span.app_id:hover {
+    color: #6f42c1;
+    text-decoration: underline;
+}
+
+.dataTables_empty {
+    display: none;
+}
+
+
+/* Chat View CSS Start Here */
+
+.chat-view .col-8 {
+    padding: 6px 10px;
+    border-radius: 10px 0 10px 0;
+    position: relative;
+    font-weight: 400;
+}
+
+.row.chat-view.my-side .col-8 {
+    background: rgba(100, 170, 0, .1);
+    color: #111;
+    border: 2px solid rgba(100, 170, 0, .1);
+}
+
+.row.chat-view {
+    margin-bottom: 14px !important;
+}
+
+.chat-view .img-div img {
+    width: 40px;
+    margin-top: 10%;
+    display: block;
+}
+
+.chat-view.div-reply {
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.detail-data-div {
+    font-size: 11px;
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+    border-top: 1px solid #e1eece;
+    border-spacing: 38px;
+    padding-top: 2px;
+    font-family: arial;
+    font-weight: 600;
+}
+
+div#query_table .row {
+    margin: 0;
+}
+
+div#query_table {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.chat-view .col-8 i.fa {
+    position: absolute;
+    left: -8px;
+    top: 2px;
+    font-size: 20px;
+}
+
+span.detail-data-div-by {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 8px;
+    font-family: arial;
+    font-weight: 600;
+}
+
+span.time-data {
+    float: right;
+}
+
+div#showQueryAdd button {
+    margin-top: 40%;
+    border-radius: 2px;
+}
+
+div#showQueryAdd {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+div#showQueryAdd select {
+    height: 28px;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 0;
+}
+
+div#showQueryAdd textarea {
+    border-radius: 0;
+}
+
+ul.color-indicator li {
+    padding-left: 0px;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+ul.color-indicator {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.color-tag {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.u-div {
+    background: #ff98004a;
+    color: #111;
+    border: 2px solid #ff980073;
+}
+
+.ca-div {
+    background: #009688 none repeat scroll 0 0;
+    color: #fff;
+    border: 2px solid #009688;
+}
+
+.c-div {
+    background: #5d78ffa1 none repeat scroll 0 0;
+    color: #fff;
+    border: 2px solid #5d78ff;
+}
+
+.m-div {
+    background: #e15249 none repeat scroll 0 0;
+    color: #fff;
+    border: 2px solid #d43126;
+}
+
+.s-div {
+    background: #8bbabb none repeat scroll 0 0;
+    color: #fff;
+    border: 2px solid #649fa0;
+}
+
+.d-div {
+    background: rgba(255, 87, 34, 0.61);
+    color: #111;
+    border: 2px solid rgb(234, 68, 15);
+}
+
+table.track-tbl tr.table-success td {
+    font-weight: 500;
+}
+
+div#mark_done_div p {
+    font-weight: 500;
+}
+
+div#raise_respond_query {
+    z-index: 3!important;
+}
+
+.modal-backdrop {
+    z-index: -1!important;
+}
+
+.msgTbl td {
+    font-size: 12px;
+    padding: 5px !important;
+}
+
+.msgTbl thead tr td {
+    font-size: 13px;
+    font-weight: 500 !important;
+    background-color: #343a40f0;
+    color: #fff;
+}
+
+.modal-header h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px !IMPORTANT;
+    font-weight: 600 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mat-menu-content.ng-tns-c92-5 {
+    padding: 0 !important;
+}
+
+.nav-span {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+}
+
+::ng-deep .mat-menu-content {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+button.mat-menu-item {
+    line-height: 30px;
+    height: 30px;
+}
+
+.danger-snackbar {
+    background: #e74c3c;
+}
+
+.danger-snackbar .mat-button-wrapper {
+    color: #fff;
+}
+
+.success-snackbar {
+    background: #e74c3c;
+}
+
+.success-snackbar .mat-button-wrapper {
+    color: #fff;
+}
+
+.dashboard-danger-snackbar {
+    background: #e74c3c;
+    color: #fff;
+    margin: 68px !important;
+}
+
+.dashboard-danger-snackbar .mat-button-wrapper {
+    color: #fff;
+}
+
+.dashboard-success-snackbar {
+    background: #20c997;
+    color: #fff;
+    margin: 68px !important;
+}
+
+.dashboard-success-snackbar .mat-button-wrapper {
+    color: #fff;
+}
+
+.scroll {
+    scrollbar-color: #939295 #d9dbd9;
+    scrollbar-width: thin;
+}
+
+@media only screen and (max-width: 767px) {
+    .right-stat-top {
+        border-radius: 0 !important;
+    }
+    .left-stat-top {
+        border-radius: 0 !important;
+    }
+    .right-stat-bottom {
+        border-radius: 0 !important;
+    }
+    .left-stat-bottom {
+        border-radius: 0 !important;
+    }
+}
+
+span.app_id {
+    margin-top: 10px !important;
+    display: block;
+}
+
+.hog-tbl tr td:first-child {
+    border-left: 5px solid #20c997;
+    border-radius: 10px 0 0 10px;
+}
+
+.hog-tbl tr:first-child td {
+    border-radius: 0 0 0 10px;
+}
+
+.hog-tbl tr:last-child td {
+    border-radius: 10px 0 0 0;
+}
+
+td.td-pending {
+    border-left: 5px solid #f39c12;
+    border-radius: 8px 0 0 8px;
+}
+
+td.td-completed {
+    border-left: 5px solid #00bc8c;
+    border-radius: 8px 0 0 8px;
+}
+
+td.td-reject {
+    border-left: 5px solid #ed687c;
+    border-radius: 8px 0 0 8px;
+}
+
+.modal.show {
+    background: #1e1d1dc4;
+}
+
+.pending-color {
+    background-color: #f39c12 !important;
+}
+
+.completed-color {
+    background-color: #00bc8c !important;
+}
+
+.reject-color {
+    background-color: #ed687c !important;
+}
+
+.card-body.form-style {
+    min-height: 500px;
+}
+
+span.total-link {
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span.total-link:hover {
+    color: #3c8dbc;
+}
+
+.dataTables_empty {
+  display: none;
+}
+
+.form-control.is-valid {
+  background-position: right calc(0.375em + 1.1875rem) center !important;
+  background-image: none !important;
+}

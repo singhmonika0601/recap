@@ -1,0 +1,62 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 head-1">MCQ Questions</h1>
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Mcq Questions</li>
+                </ol>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Info boxes -->
+        <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <div class="col-md-12">
+                <!-- MAP & BOX PANE -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">MCQ Questions</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body form-style">
+                        <div class="question" *ngFor="let question of questions; let index = index">
+                            <div class="text mt-3">{{ index+1}}{{") "}} {{question.text}}</div>
+                            <ng-container *ngFor="let option of question.options; let innerIndex = index">
+                                <input [(ngModel)]="question.selected" type="radio" class="mr-1"
+                                    value="{{ option | lowercase}}" /><label class="option mr-5">{{option}}</label>
+                            </ng-container>
+                        </div>
+                        <div class="col-md-12 text-center mt-5">
+                            <button class="btn btn-primary mr-3" (click)="GetSelectedOptions()">Get Selected
+                                Answers</button>
+                            <button class="btn btn-danger mr-3" (click)="GetScore()">Get total score</button>
+                            <button class="btn btn-success" (click)="GetAnswerCorrect()">Get answer correct</button>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!--/. container-fluid -->
+</section>
