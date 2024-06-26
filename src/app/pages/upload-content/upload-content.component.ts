@@ -11,6 +11,8 @@ declare var $: any;
 })
 export class UploadContentComponent implements OnInit {
 
+  response:any;
+
   form: FormGroup = new FormGroup({
     fullname: new FormControl(''),
     username: new FormControl(''),
@@ -43,9 +45,12 @@ export class UploadContentComponent implements OnInit {
     // formData.append('file', this.fileselected[0], 'filename.txt');
     // formData.append('name', 'John Doe');
     // console.log(formData);
-    this.servcie.fileUploadByAdmin(this.fileselected[0]).subscribe(res => {
-      console.log(res);
-      // this.response = res.summary_text;
+    this.servcie.fileUploadByAdmin(this.fileselected[0]).subscribe((res:any) => {
+      console.log(JSON.stringify(res));
+      console.log(res.body[0].summary_text);
+      console.log(res.summary_text);
+      this.response = res.body[0].summary_text;
+      sessionStorage.setItem('text', this.response);
     });
   }
 

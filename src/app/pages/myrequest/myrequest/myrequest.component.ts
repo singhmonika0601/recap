@@ -16,14 +16,15 @@ export class MyrequestComponent implements OnInit {
 
   ngOnInit(): void {
     let dataVal = {
-        text : "DNS Entry Request Form (DNS-FORM202405070006) is available on the Government of India's eForms portal. The application form must be signed by the applicant and his/her Reporting/Nodal/Forwarding Officer. Entries marked asterisk(*) are mandatory."
-      // text: sessionStorage.getItem('text')
+        // text : "DNS Entry Request Form (DNS-FORM202405070006) is available on the Government of India's eForms portal. The application form must be signed by the applicant and his/her Reporting/Nodal/Forwarding Officer. Entries marked asterisk(*) are mandatory."
+      text: sessionStorage.getItem('text')
     }
-    this.requestPanel.getSummarizedText(dataVal).subscribe(res => {
-      console.log(res);
-      this.response = res[0].summary_text;
-      console.log(this.response);
-    })
+    this.response = sessionStorage.getItem('text');
+    // this.requestPanel.getSummarizedText(dataVal).subscribe(res => {
+    //   console.log(res);
+    //   this.response = res[0].summary_text;
+    //   console.log(this.response);
+    // })
   }
 
   goToGenrateMCQs() {

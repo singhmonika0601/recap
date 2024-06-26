@@ -22,11 +22,8 @@ export class DashboardService {
     console.log(file);
     formData.append('file', file);
     formData.append('role', "admin");
-    console.log(formData);
-    const req = new HttpRequest('POST', `https://summarize-news-production.up.railway.app/api/summarize-pdf`, formData, {
-      reportProgress: true,
-      responseType: 'json',
-    });
+    console.log(formData.get('file'));
+    const req = new HttpRequest('POST', `https://summarize-news-production.up.railway.app/api/summarize-pdf`, formData);
     return this.http.request(req);
   }
 }
