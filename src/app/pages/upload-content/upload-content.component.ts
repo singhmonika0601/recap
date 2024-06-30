@@ -25,6 +25,8 @@ export class UploadContentComponent implements OnInit {
   fileUpload: any;
   fileError: any;
   fileselected = [];
+  isLoading = false;
+
   constructor(private formBuilder: FormBuilder, public servcie: DashboardService) { }
 
   ngOnInit(): void {
@@ -45,12 +47,15 @@ export class UploadContentComponent implements OnInit {
     // formData.append('file', this.fileselected[0], 'filename.txt');
     // formData.append('name', 'John Doe');
     // console.log(formData);
+    this.isLoading = true;
     this.servcie.fileUploadByAdmin(this.fileselected[0]).subscribe((res:any) => {
       console.log(JSON.stringify(res));
       console.log(res.body[0].summary_text);
       console.log(res.summary_text);
       this.response = res.body[0].summary_text;
       sessionStorage.setItem('text', this.response);
+      this.isLoading = false;
+      alert("File uploaded successfully");
     });
   }
 
@@ -72,4 +77,18 @@ export class UploadContentComponent implements OnInit {
     formData.append('role', "admin");
     console.log(formData);
   }
+
+  load() : void {
+    this.isLoading = true;
+    setTimeout( () => this.isLoading = false, 2000 );
+  }
+
+	async wait(ms: number): Promise<void> {
+		return new Promise<void>( resolve => setTimeout( resolve, ms) );
+	}
+
+	start() {
+    this.isLoading = true;
+		this.wait(2000).then( () => this.isLoading = false );
+	}
 }

@@ -14,6 +14,7 @@ import { ScoreCardComponent } from './pages/score-card/score-card.component';
 import { McqQuestionsComponent } from './pages/mcq-questions/mcq-questions.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from  '@angular/common/http';
+import { LoadingComponent } from './pages/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from  '@angular/common/http';
     MyrequestComponent,
     UploadContentComponent,
     ScoreCardComponent,
-    McqQuestionsComponent
+    McqQuestionsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
